@@ -29,7 +29,7 @@ time, mark, audio, video {
 	font-size: 100%; font: inherit; vertical-align: baseline; }
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section { display: block; }
-body { line-height: 1; }
+body { line-height: 1;overflow-x: hidden;}
 a{ text-decoration: none; }
 ol, ul { list-style: none; }
 blockquote, q { quotes: none; }
@@ -194,7 +194,7 @@ a.gdl-button:hover{ background-image: url('images/button-gradient-hover.png'); }
 .preloader { display: block; background:url(images/loading.gif) center center no-repeat; }
 
 /*--- logo ---*/
-div.logo-wrapper{ text-align: center;padding-top: 5px;padding-bottom: 0px; max-width: 100%; float: left; } 
+div.logo-wrapper{ text-align: center;padding-top: 5px;padding-bottom: 0px; max-width: 100%; float: left; }
 div.logo-wrapper a{ display: inline-block; }
 div.logo-wrapper h1{ margin: 0px; }
 
@@ -272,7 +272,7 @@ div.content-outer-wrapper{ position: relative; }
 div.header-top-bar-wrapper,
 div.header-bottom-bar-wrapper{ position: relative; }
 div.header-top-bar{ height: 3px; position: absolute; left: 0px; right: 0px; bottom: -3px; z-index: 10;
-	background: url('images/header-top-bar.png'); }
+	background: url('images/header-top-bar.png');}
 div.header-bottom-bar{ position: absolute; left: 0px; right: 0px; top: -4px; z-index: 10; }
 div.content-outer-wrapper.top-slider-enabled .header-bottom-bar{ height: 4px;
 	background: url('images/header-bottom-bar.png'); }
@@ -1022,4 +1022,77 @@ only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device
 	div.portfolio-media-wrapper span.hover-video{ background-image: url('images/image-overlay-video@2x.png'); }
 	div.portfolio-media-wrapper span.hover-zoom{ background-image: url('images/image-overlay@2x.png'); }
 	div.about-us-wrapper .about-us-button-wrapper.pdf-icon-on{ background-image: url('images/pdf-icon@2x.png'); }
+}
+/******************My CSS***************************/
+.bottom-column-service-head img
+{
+	border-radius: 50%;
+    height: 150px;
+    margin-left: 33%;
+}
+.bottom-column-service-wrapper
+{
+	padding-bottom: 20px;
+}
+#post-9 .gdl-column-item
+{
+    border: 1px solid #c5c3c3;
+    box-shadow: 5px 7px 12px;
+    padding: 20px 20px 10px 20px;
+}
+.cst h3
+{
+	margin-left: 8px;
+}
+.msgr img
+{
+	border-radius: 50%;
+	width: 100px;
+	height: 90px;
+}
+#post-9 .column-item-class-2 .gdl-column-item
+{
+    border: none;
+    box-shadow: none;
+    padding: 0px;
+}
+.about-us-content-wrapper .about-us-content
+{
+	line-height: 24px;
+}
+@media only screen and (max-width:469px)
+{
+	#v_container
+	{
+		margin-left: -30px;
+	}
+	div.header-wrapper .logo-wrapper
+	{
+		padding: 5px 0px 5px 0px !important;
+		width: 25%;
+	}
+	div.responsive-menu-wrapper select {
+    width: 85% !important;
+    height: 25px;
+}
+div.header-wrapper .responsive-menu-wrapper {
+    display: block !important;
+    margin-top: -45px !important ;
+    margin-left: 100px!important ;
+    margin-bottom: 0px !important;
+    padding-bottom: 5px !important;
+}
+div.header-wrapper .gdl-navigation-wrapper {
+    padding-bottom: 0px !important;
+}
+.bottom-column-service-head img {
+    margin-left: 50% !important;
+}
+.msgx img
+{
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	margin-left: 25%;
+}
 }

@@ -141,11 +141,12 @@ div.gdl-carousel-testimonial .testimonial-content{ background-color: #eaeaea; }
 div.gdl-static-testimonial .testimonial-item{ color: #666666; } 
 div.gdl-static-testimonial .testimonial-item{ border-color: #bdbdbd; } 
 div.gdl-static-testimonial .testimonial-info{ color: #a8a8a8; } 
-html{ background-image: url(images/pattern/pattern-13.png); } 
+html{ background-image: url(images/pattern/pattern-1.png); } 
+body{ background: url("images/pattern/pattern-1-gimmick.png") center 0px repeat-y; } 
 .logo-wrapper{ padding-top: 32px; padding-bottom: 32px; } 
 ul.sf-menu li{ padding-top: 35px; } 
 h1.gdl-header-title{ font-size: 21px; } 
-body{ font-size: 13px; } 
+body{ font-size: 14px; } 
 h3.custom-sidebar-title{ font-size: 17px; } 
 h1{ font-size: 30px; } 
 h2{ font-size: 25px; } 
