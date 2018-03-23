@@ -1,5 +1,5 @@
 /*global jQuery */
-/*! 
+/*!
 * FitVids 1.0
 *
 * Copyright 2011, Chris Coyier - http://css-tricks.com + Dave Rupert - http://daverupert.com
@@ -15,10 +15,10 @@
     var settings = {
       customSelector: null
     }
-    
+
     var div = document.createElement('div'),
         ref = document.getElementsByTagName('base')[0] || document.getElementsByTagName('script')[0];
-        
+
   	div.className = 'fit-vids-style';
     div.innerHTML = '&shy;<style>         \
       .fluid-width-video-wrapper {        \
@@ -37,29 +37,29 @@
          height: 100%;                    \
       }                                   \
     </style>';
-                      
+
     ref.parentNode.insertBefore(div,ref);
-    
-    if ( options ) { 
+
+    if ( options ) {
       $.extend( settings, options );
     }
-    
+
     return this.each(function(){
       var selectors = [
-        "iframe[src^='http://player.vimeo.com']", 
-        "iframe[src^='http://www.youtube.com']", 
+        "iframe[src^='http://player.vimeo.com']",
+        "iframe[src^='http://www.youtube.com']",
         "iframe[src^='http://www.kickstarter.com']"
       ];
-      
+
       if (settings.customSelector) {
         selectors.push(settings.customSelector);
       }
-      
+
       var $allVideos = $(this).find(selectors.join(','));
 
       $allVideos.each(function(){
         var $this = $(this);
-        if (this.tagName.toLowerCase() == 'embed' && $this.parent('object').length || $this.parent('.fluid-width-video-wrapper').length) { return; } 
+        if (this.tagName.toLowerCase() == 'embed' && $this.parent('object').length || $this.parent('.fluid-width-video-wrapper').length) { return; }
         var height = this.tagName.toLowerCase() == 'object' ? $this.attr('height') : $this.height(),
             aspectRatio = height / $this.width();
 		if(!$this.attr('id')){
@@ -70,10 +70,19 @@
         $this.removeAttr('height').removeAttr('width');
       });
     });
-  
+
   }
 })( jQuery );
 
 jQuery(document).ready(function(){
 	jQuery(".gdl-page-row-wrapper").fitVids();
+});
+
+$=jQuery;
+$(document).ready(function(){
+$('.mb41').addClass('');
+$('.mb42').addClass('');
+$('.about-us-content-wrapper').addClass('animated bounceInDown');
+$('.about-us-wrapper img').addClass('animated growIn');
+$('.countrow .col-lg-2').addClass('animated growIn');
 });

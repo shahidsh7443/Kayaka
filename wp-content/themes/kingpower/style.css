@@ -264,7 +264,7 @@ div.gdl-header-divider{ height: 0px; overflow: hidden; position: relative; top: 
 	border-bottom-width: 1px; border-bottom-style: solid; }
 
 /*--- page content ---*/
-div.gdl-page-item{ padding-top: 50px; }
+/*div.gdl-page-item{ padding-top: 50px; }*/
 
 /*--- top slider / layer slider ---*/
 div.header-outer-wrapper,
@@ -443,7 +443,7 @@ div.about-us-item-class.three .about-us-image{ float: none; margin-right: 0px; m
 
 div.about-us-wrapper .about-us-image { float: left; margin-right: 25px; max-width: 37%; }
 div.about-us-wrapper .about-us-content-wrapper { overflow: hidden; }
-div.about-us-wrapper .about-us-button-wrapper{ margin-top: 25px; display: inline-block; }
+div.about-us-wrapper .about-us-button-wrapper{ margin-top: 20px; display: inline-block;}
 div.about-us-wrapper .about-us-button-wrapper.pdf-icon-on{ padding-right: 20px;
 	background-size: 15px 17px; background-repeat: no-repeat; background-position: right 11px; }
 
@@ -1050,12 +1050,12 @@ only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device
 	width: 100px;
 	height: 90px;
 }
-#post-9 .column-item-class-2 .gdl-column-item
+/*#post-9 .column-item-class-2 .gdl-column-item
 {
     border: none;
     box-shadow: none;
     padding: 0px;
-}
+}*/
 .mb46 .gdl-column-item
 {
 	border: 1px solid #c5c3c3;
@@ -1113,6 +1113,146 @@ only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device
 	padding: 25px 25px 0 25px;
     border: 1px solid #f2f2f2;
     box-shadow: 5px 5px 10px;
+}
+.mb30  .gdl-column-item {
+    border: none;
+    box-shadow: none;
+    padding: 0px;
+}
+.bottom-slider-wrapper
+{
+	display: none;
+}
+	#wpsm_counter_b_row_3507 {
+    position: relative;
+    width: 107.2% !important;
+    overflow: hidden;
+    text-align: center;
+    margin-left: -40px;
+		background-image: linear-gradient(to right, #cec2ab 0%, #00c1cf 50%,#cec2ab 100%);
+		padding-top: 50px;
+}
+.wpsm_count-icon
+{
+	width: 75px;
+	height: 75px;
+	border:1px solid #096dce;
+	border-radius:50%;
+	padding-top: 20px !important;
+  padding-left: 2px !important;
+	background-color: #096dce;
+}
+.wpsm_count-icon:hover {
+    background-color: black;
+    transform: rotate(360deg);
+    transition: 0.5s all ease;
+}
+/*.about-us-wrapper img
+{
+	animation: leftright 3s ease forwards;
+	-webkit-animation: leftright 3s ease forwards;
+	-moz-animation: leftright 3s ease forwards;
+	position: absolute;
+}
+@-webkit-keyframes leftright {
+	from {
+                margin-left: -100%;
+								opacity: 0;
+            }
+
+            to {
+                margin-left: 100%;
+								opacity: 1;
+            }
+}
+@-moz-keyframes leftright {
+	from {
+                margin-left: -100%;
+								opacity: 0;
+            }
+
+            to {
+                margin-left: 100%;
+								opacity: 1;
+            }
+}
+@keyframes leftright {
+	from {
+                margin-left: -100%;
+								opacity: 0;
+            }
+
+            to {
+                margin-left: 0%;
+								opacity: 1;
+            }
+}*/
+/*.animated {
+    -webkit-animation-duration: 5s !important;
+    animation-duration: 5s !important;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}*/
+.mb30 .gdl-header-wrapper {
+    margin-bottom: -40px;
+    position: absolute;
+		z-index: 444;
+		margin-top: 35px;
+    margin-left: 32%;
+}
+#ytube
+{
+	position: absolute;
+	right: 0;
+	z-index: 555;
+	margin-top: 200px;
+	margin-right: 25px;
+}
+.icon .fa
+{
+	font-size: 40px;
+	margin-top: 20px;
+    margin-left: 10px;
+		color: white;
+}
+.stats
+{
+	margin-top: 10px;
+}
+#countid
+{
+	padding: 25px;
+    background-image: linear-gradient(to right, #cec2ab 0%, #00c1cf 50%,#cec2ab 100%);
+    margin-left: -40px;
+    margin-right: -40px;
+    padding-top: 75px;
+}
+.countrow .col-lg-2
+{
+	text-align: center;
+	margin-right: 35px;
+}
+.countrow .icon
+{
+	border-radius: 50%;
+background-clip: padding-box;
+width: 80px;
+height: 80px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 15px;
+/*background-color: #0C69F8;*/
+color: #000000;
+background-image: linear-gradient(to right, #1a3e73 0%, #005aa5 50%,#426ea7 100%);
+}
+.countrow .number
+{
+	font-size: 40px;
+	font-weight: 600;
+}
+.icon:hover {
+    transform: rotate(360deg);
+    transition: 1s all ease;
 }
 @media only screen and (max-width:469px)
 {
