@@ -82,7 +82,48 @@ $=jQuery;
 $(document).ready(function(){
 $('.mb41').addClass('');
 $('.mb42').addClass('');
-$('.about-us-content-wrapper').addClass('animated bounceInDown');
-$('.about-us-wrapper img').addClass('animated growIn');
+$('.about-us-wrapper').addClass('animatedParent');
+$('.about-us-image').addClass('animated fadeInLeft delay-400');
+$('.about-us-content-wrapper').addClass('animatedParent');
+$('.about-us-content').addClass('animated fadeInRight delay-400');
+$('.about-us-button-wrapper').addClass('animated fadeIn slowest');
 $('.countrow .col-lg-2').addClass('animated growIn');
+
+
+var _counterflag = false;
+_counter();
+$(window).scroll(function(){
+if($('#countid').find('.go').length>0)
+{
+  if(!_counterflag){
+    _counter();
+    _counterflag = true;
+
+  }
+}
+else {
+  _counterflag = false;
+}
 });
+
+
+
+
+});
+
+
+
+function _counter(){
+  $('.number').each(function () {
+      $(this).prop('Counter',0).animate({
+          Counter: $(this).attr("data-id")
+      }, {
+          duration: 4000,
+          easing: 'swing',
+          step: function (now) {
+              $(this).text(Math.ceil(now));
+          }
+      });
+  });
+
+}
