@@ -92,7 +92,7 @@ class Requests_Transport_cURL implements Requests_Transport {
 	public function __construct() {
 		$curl = curl_version();
 		$this->version = $curl['version_number'];
-		$this->handle = curl_init();
+		$this->handle = curl__init();
 
 		curl_setopt($this->handle, CURLOPT_HEADER, false);
 		curl_setopt($this->handle, CURLOPT_RETURNTRANSFER, 1);

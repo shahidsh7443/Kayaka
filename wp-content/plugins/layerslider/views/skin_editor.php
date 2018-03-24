@@ -80,7 +80,7 @@
 		</h3>
 		<p class="inner"><?php _e('Built-in skins will be overwritten by plugin updates. Making changes should be done through the Custom Styles Editor.', 'LayerSlider') ?></p>
 		<div class="inner">
-			<textarea rows="10" cols="50" name="contents" class="ls-codemirror"><?php echo htmlentities(file_get_contents($file)); ?></textarea>
+			<textarea rows="10" cols="50" name="contents" class="ls-codemirror"><?php echo htmlentities(file__get_contents($file)); ?></textarea>
 			<p class="footer">
 				<?php if(!is_writable($file)) { ?>
 				<?php echo sprintf(__('You need to make this file writable in order to save your changes. See the %sCodex%s for more information.', 'LayerSlider'), '<a href="http://codex.wordpress.org/Changing_File_Permissions" target="_blank">', '</a>') ?>

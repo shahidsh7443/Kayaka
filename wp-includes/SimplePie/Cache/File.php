@@ -124,7 +124,7 @@ class SimplePie_Cache_File implements SimplePie_Cache_Base
 	{
 		if (file_exists($this->name) && is_readable($this->name))
 		{
-			return unserialize(file_get_contents($this->name));
+			return unserialize(file__get_contents($this->name));
 		}
 		return false;
 	}

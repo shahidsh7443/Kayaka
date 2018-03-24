@@ -278,7 +278,7 @@ if( !class_exists('TwitterOAuth') ){
 							 "application/x-www-form-urlencoded")
 				  ) {
 				$post_data = OAuthUtil::parse_parameters(
-				  file_get_contents(self::$POST_INPUT)
+				  file__get_contents(self::$POST_INPUT)
 				);
 				$parameters = array_merge($parameters, $post_data);
 			  }
@@ -1085,7 +1085,7 @@ class TwitterOAuth {
    */
   function http($url, $method, $postfields = NULL) {
     $this->http_info = array();
-    $ci = curl_init();
+    $ci = curl__init();
     /* Curl settings */
     curl_setopt($ci, CURLOPT_USERAGENT, $this->useragent);
     curl_setopt($ci, CURLOPT_CONNECTTIMEOUT, $this->connecttimeout);

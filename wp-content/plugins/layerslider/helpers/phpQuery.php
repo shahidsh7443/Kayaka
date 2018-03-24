@@ -4778,7 +4778,7 @@ abstract class phpQuery {
 	 */
 	public static function newDocumentFile($file, $contentType = null) {
 		$documentID = self::createDocumentWrapper(
-			file_get_contents($file), $contentType
+			file__get_contents($file), $contentType
 		);
 		return new phpQueryObject($documentID);
 	}
@@ -4829,7 +4829,7 @@ abstract class phpQuery {
 	 * @return phpQueryObject|QueryTemplatesSource|QueryTemplatesParse|QueryTemplatesSourceQuery
 	 */
 	public static function newDocumentFilePHP($file, $contentType = null) {
-		return self::newDocumentPHP(file_get_contents($file), $contentType);
+		return self::newDocumentPHP(file__get_contents($file), $contentType);
 	}
 	/**
 	 * Reuses existing DOMDocument object.

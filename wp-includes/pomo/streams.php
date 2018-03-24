@@ -277,7 +277,7 @@ class POMO_CachedFileReader extends POMO_StringReader {
 	 */
 	function __construct( $filename ) {
 		parent::POMO_StringReader();
-		$this->_str = file_get_contents($filename);
+		$this->_str = file__get_contents($filename);
 		if (false === $this->_str)
 			return false;
 		$this->_pos = 0;

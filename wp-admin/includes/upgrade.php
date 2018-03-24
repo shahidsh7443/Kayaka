@@ -2584,7 +2584,7 @@ function make_site_theme_from_oldschool($theme_name, $template) {
 	// Add a theme header.
 	$header = "/*\nTheme Name: $theme_name\nTheme URI: " . __get_option('siteurl') . "\nDescription: A theme automatically created by the update.\nVersion: 1.0\nAuthor: Moi\n*/\n";
 
-	$stylelines = file_get_contents("$site_dir/style.css");
+	$stylelines = file__get_contents("$site_dir/style.css");
 	if ($stylelines) {
 		$f = fopen("$site_dir/style.css", 'w');
 

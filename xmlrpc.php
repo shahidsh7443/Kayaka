@@ -18,7 +18,7 @@ $_COOKIE = array();
 // A bug in PHP < 5.2.2 makes $HTTP_RAW_POST_DATA not set by default,
 // but we can do it ourself.
 if ( !isset( $HTTP_RAW_POST_DATA ) ) {
-	$HTTP_RAW_POST_DATA = file_get_contents( 'php://input' );
+	$HTTP_RAW_POST_DATA = file__get_contents( 'php://input' );
 }
 
 // fix for mozBlog and other cases where '<?xml' isn't on the very first line

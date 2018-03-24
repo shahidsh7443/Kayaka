@@ -3188,7 +3188,7 @@ function wp_load_image( $file ) {
 	// Set artificially high because GD uses uncompressed images in memory.
 	wp_raise_memory_limit( 'image' );
 
-	$image = imagecreatefromstring( file_get_contents( $file ) );
+	$image = imagecreatefromstring( file__get_contents( $file ) );
 
 	if ( ! is_resource( $image ) ) {
 		/* translators: %s: file name */

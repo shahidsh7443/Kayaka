@@ -1368,7 +1368,7 @@ function _upgrade_422_find_genericons_files_in_folder( $directory ) {
 	$directory = trailingslashit( $directory );
 	$files     = array();
 
-	if ( file_exists( "{$directory}example.html" ) && false !== strpos( file_get_contents( "{$directory}example.html" ), '<title>Genericons</title>' ) ) {
+	if ( file_exists( "{$directory}example.html" ) && false !== strpos( file__get_contents( "{$directory}example.html" ), '<title>Genericons</title>' ) ) {
 		$files[] = "{$directory}example.html";
 	}
 

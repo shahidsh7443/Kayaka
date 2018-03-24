@@ -2378,7 +2378,7 @@ class PHPMailer
                 }
                 if ($sign) {
                     @unlink($file);
-                    $body = file_get_contents($signed);
+                    $body = file__get_contents($signed);
                     @unlink($signed);
                     //The message returned by openssl contains both headers and body, so need to split them up
                     $parts = explode("\n\n", $body, 2);
@@ -2701,7 +2701,7 @@ class PHPMailer
                     ini_set('magic_quotes_runtime', false);
                 }
             }
-            $file_buffer = file_get_contents($path);
+            $file_buffer = file__get_contents($path);
             $file_buffer = $this->encodeString($file_buffer, $encoding);
             if ($magic_quotes) {
                 if (version_compare(PHP_VERSION, '5.3.0', '<')) {
@@ -3783,7 +3783,7 @@ class PHPMailer
             }
             return '';
         }
-        $privKeyStr = !empty($this->DKIM_private_string) ? $this->DKIM_private_string : file_get_contents($this->DKIM_private);
+        $privKeyStr = !empty($this->DKIM_private_string) ? $this->DKIM_private_string : file__get_contents($this->DKIM_private);
         if ('' != $this->DKIM_passphrase) {
             $privKey = openssl_pkey_get_private($privKeyStr, $this->DKIM_passphrase);
         } else {

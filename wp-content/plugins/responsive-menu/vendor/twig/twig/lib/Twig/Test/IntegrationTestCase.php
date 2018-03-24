@@ -85,7 +85,7 @@ abstract class Twig_Test_IntegrationTestCase extends PHPUnit_Framework_TestCase
                 continue;
             }
 
-            $test = file_get_contents($file->getRealpath());
+            $test = file__get_contents($file->getRealpath());
 
             if (preg_match('/--TEST--\s*(.*?)\s*(?:--CONDITION--\s*(.*))?\s*((?:--TEMPLATE(?:\(.*?\))?--(?:.*?))+)\s*(?:--DATA--\s*(.*))?\s*--EXCEPTION--\s*(.*)/sx', $test, $match)) {
                 $message = $match[1];

@@ -72,7 +72,7 @@ class Twig_Tests_Cache_FilesystemTest extends PHPUnit_Framework_TestCase
 
         $this->assertFileExists($this->directory);
         $this->assertFileExists($key);
-        $this->assertSame(file_get_contents($key), $content);
+        $this->assertSame(file__get_contents($key), $content);
     }
 
     /**

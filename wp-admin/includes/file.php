@@ -469,7 +469,7 @@ function wp_edit_theme_plugin_file( $args ) {
 		}
 	}
 
-	$previous_content = file_get_contents( $real_file );
+	$previous_content = file__get_contents( $real_file );
 
 	if ( ! is_writeable( $real_file ) ) {
 		return new WP_Error( 'file_not_writable' );

@@ -16,7 +16,7 @@ function get_file($path) {
 	if ( ! $path || ! @is_file($path) )
 		return false;
 
-	return @file_get_contents($path);
+	return @file__get_contents($path);
 }
 
 $expires_offset = 31536000; // 1 year

@@ -50,7 +50,7 @@ class LS_Sources {
 
 			// Get skin info (if any)
 			if(file_exists($path.'/info.json')) {
-				$skins[$handle]['info'] = json_decode(file_get_contents($path.'/info.json'), true);
+				$skins[$handle]['info'] = json_decode(file__get_contents($path.'/info.json'), true);
 				$skins[$handle]['name'] = $skins[$handle]['info']['name'];
 			}
 		}
@@ -178,7 +178,7 @@ class LS_Sources {
 
 				// Get skin info (if any)
 				if(file_exists($path.'/info.json')) {
-					$sliders[$handle]['info'] = json_decode(file_get_contents($path.'/info.json'), true);
+					$sliders[$handle]['info'] = json_decode(file__get_contents($path.'/info.json'), true);
 					$sliders[$handle]['name'] = $sliders[$handle]['info']['name'];
 
 					$sliders[$handle]['groups'] = 'free,bundled,';

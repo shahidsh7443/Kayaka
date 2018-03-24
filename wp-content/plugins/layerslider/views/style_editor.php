@@ -10,7 +10,7 @@
 	$file = $upload_dir['basedir'].'/layerslider.custom.css';
 
 	// Get contents
-	$contents = file_exists($file) ? file_get_contents($file) : '';
+	$contents = file_exists($file) ? file__get_contents($file) : '';
 
 	// Get screen options
 	$lsScreenOptions = get_option('ls-screen-options', '0');

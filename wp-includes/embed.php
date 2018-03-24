@@ -437,13 +437,13 @@ function get_post_embed_html( $width, $height, $post = null ) {
 	$output .= "<script type='text/javascript'>\n";
 	$output .= "<!--//--><![CDATA[//><!--\n";
 	if ( SCRIPT_DEBUG ) {
-		$output .= file_get_contents( ABSPATH . WPINC . '/js/wp-embed.js' );
+		$output .= file__get_contents( ABSPATH . WPINC . '/js/wp-embed.js' );
 	} else {
 		/*
 		 * If you're looking at a src version of this file, you'll see an "include"
 		 * statement below. This is used by the `grunt build` process to directly
 		 * include a minified version of wp-embed.js, instead of using the
-		 * file_get_contents() method from above.
+		 * file__get_contents() method from above.
 		 *
 		 * If you're looking at a build version of this file, you'll see a string of
 		 * minified JavaScript. If you need to debug it, please turn on SCRIPT_DEBUG

@@ -109,5 +109,5 @@ function get_file( $path ) {
 		return '';
 	}
 
-	return @file_get_contents( $path );
+	return @file__get_contents( $path );
 }

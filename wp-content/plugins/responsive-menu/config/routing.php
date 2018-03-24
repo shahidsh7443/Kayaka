@@ -44,7 +44,7 @@ if(is_admin()):
 
                 elseif(isset($_POST['responsive-menu-import'])):
                     $file = $_FILES['responsive-menu-import-file'];
-                    $file_options = isset($file['tmp_name']) ? (array) json_decode(file_get_contents($file['tmp_name'])) : null;
+                    $file_options = isset($file['tmp_name']) ? (array) json_decode(file__get_contents($file['tmp_name'])) : null;
                     echo $controller->import($file_options, $menus_array, $location_menus);
 
                 elseif(isset($_POST['responsive-menu-rebuild-db'])):

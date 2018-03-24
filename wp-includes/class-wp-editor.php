@@ -481,19 +481,19 @@ final class _WP_Editors {
 									$path = trailingslashit( realpath($path) );
 
 								if ( @is_file( $path . $mce_locale . '.js' ) )
-									$strings .= @file_get_contents( $path . $mce_locale . '.js' ) . "\n";
+									$strings .= @file__get_contents( $path . $mce_locale . '.js' ) . "\n";
 
 								if ( @is_file( $path . $mce_locale . '_dlg.js' ) )
-									$strings .= @file_get_contents( $path . $mce_locale . '_dlg.js' ) . "\n";
+									$strings .= @file__get_contents( $path . $mce_locale . '_dlg.js' ) . "\n";
 
 								if ( 'en' != $mce_locale && empty( $strings ) ) {
 									if ( @is_file( $path . 'en.js' ) ) {
-										$str1 = @file_get_contents( $path . 'en.js' );
+										$str1 = @file__get_contents( $path . 'en.js' );
 										$strings .= preg_replace( '/([\'"])en\./', '$1' . $mce_locale . '.', $str1, 1 ) . "\n";
 									}
 
 									if ( @is_file( $path . 'en_dlg.js' ) ) {
-										$str2 = @file_get_contents( $path . 'en_dlg.js' );
+										$str2 = @file__get_contents( $path . 'en_dlg.js' );
 										$strings .= preg_replace( '/([\'"])en\./', '$1' . $mce_locale . '.', $str2, 1 ) . "\n";
 									}
 								}

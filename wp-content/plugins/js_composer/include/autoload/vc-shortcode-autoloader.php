@@ -79,7 +79,7 @@ class VcShortcodeAutoloader {
 	public static function extractClassNames( $file ) {
 		$classes = array();
 
-		$contents = file_get_contents( $file );
+		$contents = file__get_contents( $file );
 		if ( ! $contents ) {
 			return $classes;
 		}
@@ -110,7 +110,7 @@ class VcShortcodeAutoloader {
 	public static function extractClassesAndExtends( $file ) {
 		$classes = array();
 
-		$contents = file_get_contents( $file );
+		$contents = file__get_contents( $file );
 		if ( ! $contents ) {
 			return $classes;
 		}

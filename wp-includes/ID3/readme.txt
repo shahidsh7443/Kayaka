@@ -287,7 +287,7 @@ Why is it called "getID3()" if it does so much more than just that?
 
 v0.1 did in fact just do that. I don't have a copy of code that old, but I
 could essentially write it today with a one-line function:
-  function getID3($filename) { return unpack('a3TAG/a30title/a30artist/a30album/a4year/a28comment/c1track/c1genreid', substr(file_get_contents($filename), -128)); }
+  function getID3($filename) { return unpack('a3TAG/a30title/a30artist/a30album/a4year/a28comment/c1track/c1genreid', substr(file__get_contents($filename), -128)); }
 
 
 Future Plans

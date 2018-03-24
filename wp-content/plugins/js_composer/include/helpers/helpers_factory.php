@@ -411,7 +411,7 @@ function vc_plugin_name() {
  *
  * @return bool|mixed|string
  */
-function vc_file_get_contents( $filename, $partial = false ) {
+function vc_file__get_contents( $filename, $partial = false ) {
 	global $wp_filesystem;
 	if ( empty( $wp_filesystem ) ) {
 		require_once( ABSPATH . '/wp-admin/includes/file.php' );
@@ -428,7 +428,7 @@ function vc_file_get_contents( $filename, $partial = false ) {
 		} else {
 
 		}*/
-		$output = file_get_contents( $filename );
+		$output = file__get_contents( $filename );
 	}
 
 	return $output;

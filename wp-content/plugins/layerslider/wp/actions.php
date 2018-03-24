@@ -1129,7 +1129,7 @@ function ls_do_erase_plugin_data() {
 
 // 		// Save image from URL
 // 		$fp = fopen($uploadFile, 'w');
-// 		fwrite($fp, file_get_contents($url));
+// 		fwrite($fp, file__get_contents($url));
 // 		fclose($fp);
 
 // 		// Include image.php for media library upload

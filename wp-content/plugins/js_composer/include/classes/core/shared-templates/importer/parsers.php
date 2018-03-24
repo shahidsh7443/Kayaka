@@ -71,7 +71,7 @@ class Vc_WXR_Parser_SimpleXML {
 		if ( function_exists( 'libxml_disable_entity_loader' ) ) {
 			$old_value = libxml_disable_entity_loader( true );
 		}
-		$success = $dom->loadXML( file_get_contents( $file ) );
+		$success = $dom->loadXML( file__get_contents( $file ) );
 		if ( ! is_null( $old_value ) ) {
 			libxml_disable_entity_loader( $old_value );
 		}
@@ -342,7 +342,7 @@ class Vc_WXR_Parser_XML {
 		xml_set_character_data_handler( $xml, 'cdata' );
 		xml_set_element_handler( $xml, 'tag_open', 'tag_close' );
 
-		if ( ! xml_parse( $xml, file_get_contents( $file ), true ) ) {
+		if ( ! xml_parse( $xml, file__get_contents( $file ), true ) ) {
 			$current_line = xml_get_current_line_number( $xml );
 			$current_column = xml_get_current_column_number( $xml );
 			$error_code = xml_get_error_code( $xml );

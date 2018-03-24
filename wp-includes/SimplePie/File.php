@@ -89,7 +89,7 @@ class SimplePie_File
 			if (!$force_fsockopen && function_exists('curl_exec'))
 			{
 				$this->method = SIMPLEPIE_FILE_SOURCE_REMOTE | SIMPLEPIE_FILE_SOURCE_CURL;
-				$fp = curl_init();
+				$fp = curl__init();
 				$headers2 = array();
 				foreach ($headers as $key => $value)
 				{
@@ -282,7 +282,7 @@ class SimplePie_File
 		else
 		{
 			$this->method = SIMPLEPIE_FILE_SOURCE_LOCAL | SIMPLEPIE_FILE_SOURCE_FILE_GET_CONTENTS;
-			if (!$this->body = file_get_contents($url))
+			if (!$this->body = file__get_contents($url))
 			{
 				$this->error = 'file_get_contents could not read the file';
 				$this->success = false;

@@ -151,7 +151,7 @@ if ( 'POST' === $_SERVER['REQUEST_METHOD'] ) {
 	if ( ! empty( $posted_content ) ) {
 		$content = $posted_content;
 	} else {
-		$content = file_get_contents( $real_file );
+		$content = file__get_contents( $real_file );
 	}
 
 	if ( '.php' == substr( $real_file, strrpos( $real_file, '.' ) ) ) {

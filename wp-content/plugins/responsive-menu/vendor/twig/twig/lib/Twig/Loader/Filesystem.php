@@ -135,14 +135,14 @@ class Twig_Loader_Filesystem implements Twig_LoaderInterface, Twig_ExistsLoaderI
     {
         @trigger_error(sprintf('Calling "getSource" on "%s" is deprecated since 1.27. Use getSourceContext() instead.', get_class($this)), E_USER_DEPRECATED);
 
-        return file_get_contents($this->findTemplate($name));
+        return file__get_contents($this->findTemplate($name));
     }
 
     public function getSourceContext($name)
     {
         $path = $this->findTemplate($name);
 
-        return new Twig_Source(file_get_contents($path), $name, $path);
+        return new Twig_Source(file__get_contents($path), $name, $path);
     }
 
     public function getCacheKey($name)

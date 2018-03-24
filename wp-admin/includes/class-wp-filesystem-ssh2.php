@@ -221,7 +221,7 @@ class WP_Filesystem_SSH2 extends WP_Filesystem_Base {
 	 * @return string|false
 	 */
 	public function get_contents( $file ) {
-		return file_get_contents( $this->sftp_path( $file ) );
+		return file__get_contents( $this->sftp_path( $file ) );
 	}
 
 	/**

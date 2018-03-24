@@ -34,7 +34,7 @@ class WP_Filesystem_Direct extends WP_Filesystem_Base {
 	 * @return string|bool The function returns the read data or false on failure.
 	 */
 	public function get_contents($file) {
-		return @file_get_contents($file);
+		return @file__get_contents($file);
 	}
 
 	/**

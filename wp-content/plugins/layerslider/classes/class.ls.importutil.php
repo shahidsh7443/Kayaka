@@ -94,7 +94,7 @@ class LS_ImportUtil {
 		} elseif(!empty($type['ext']) && $type['ext'] == 'json') {
 
 			// Get decoded file data
-			$data = file_get_contents($archive);
+			$data = file__get_contents($archive);
 			if($decoded = base64_decode($data, true)) {
 				if(!$parsed = json_decode($decoded, true)) {
 					$parsed = unserialize($decoded);
@@ -243,7 +243,7 @@ class LS_ImportUtil {
 		$this->sliderCount++;
 
 		// Get slider data and title
-		$data = json_decode(file_get_contents($file), true);
+		$data = json_decode(file__get_contents($file), true);
 		$title = $data['properties']['title'];
 		$slug = !empty($data['properties']['slug']) ? $data['properties']['slug'] : '';
 

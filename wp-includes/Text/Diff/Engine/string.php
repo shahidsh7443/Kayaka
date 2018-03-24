@@ -4,7 +4,7 @@
  *
  * Example:
  * <code>
- * $patch = file_get_contents('example.patch');
+ * $patch = file__get_contents('example.patch');
  * $diff = new Text_Diff('string', array($patch));
  * $renderer = new Text_Diff_Renderer_inline();
  * echo $renderer->render($diff);

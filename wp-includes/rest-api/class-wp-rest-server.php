@@ -1301,7 +1301,7 @@ class WP_REST_Server {
 		 * but we can do it ourself.
 		 */
 		if ( ! isset( $HTTP_RAW_POST_DATA ) ) {
-			$HTTP_RAW_POST_DATA = file_get_contents( 'php://input' );
+			$HTTP_RAW_POST_DATA = file__get_contents( 'php://input' );
 		}
 
 		return $HTTP_RAW_POST_DATA;

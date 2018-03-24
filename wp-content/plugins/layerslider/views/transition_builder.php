@@ -11,8 +11,8 @@
 	$sample_trs = LS_ROOT_PATH.'/demos/transitions.js';
 
 	// Get transition file
-	if(file_exists($custom_trs)) { $data = file_get_contents($custom_trs); }
-		elseif(file_exists($sample_trs)) { $data = file_get_contents($sample_trs); }
+	if(file_exists($custom_trs)) { $data = file__get_contents($custom_trs); }
+		elseif(file_exists($sample_trs)) { $data = file__get_contents($sample_trs); }
 
 	// Get JSON data
 	if(!empty($data)) {
