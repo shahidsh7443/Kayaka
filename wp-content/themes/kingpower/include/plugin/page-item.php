@@ -716,7 +716,7 @@
 
 		$xml_size = find_xml_value($item_xml, 'size');
 		if( $xml_size == 'full-width' ){
-			echo '<div class="gdl-slider-wrapper fullwidth"><div id="ytube" class="animatedParent"><iframe class="animated growIn slower" width="460" height="315" src="https://www.youtube.com/embed/2fz7b5Q-UgU?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>';
+			echo '<div class="gdl-slider-wrapper fullwidth"><div id="ytube" class="animatedParent"><iframe class="animated growIn slower" width="460" height="315" src="https://www.youtube.com/embed/2fz7b5Q-UgU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>';
 		}else{
 			echo '<div class="gdl-slider-wrapper">';
 		}

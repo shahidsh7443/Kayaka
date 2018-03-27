@@ -88,8 +88,18 @@ $('.about-us-content-wrapper').addClass('animatedParent');
 $('.about-us-content').addClass('animated fadeInRight delay-400');
 $('.about-us-button-wrapper').addClass('animated fadeIn slowest');
 $('.countrow .col-lg-2').addClass('animated growIn');
-
-
+$('.abtcls').addClass('animatedParent');
+$('.imgcls1').addClass('animated fadeInLeft');
+$('.kaycls').addClass('animated fadeInRight');
+$('#rid1').addClass('animatedParent');
+$('.imgcls2').addClass('animated fadeInRight');
+$('.kaycls2').addClass('animated fadeInLeft');
+$('#rid2').addClass('animatedParent');
+$('.imgcls3').addClass('animated fadeInLeft');
+$('.kaycls3').addClass('animated fadeInRight');
+$('#rid3').addClass('animatedParent');
+$('.imgcls4').addClass('animated fadeInRight');
+$('.kaycls4').addClass('animated fadeInLeft');
 var _counterflag = false;
 _counter();
 $(window).scroll(function(){

@@ -1,4 +1,5 @@
 <?php
+require_once(dirname(__FILE__).'/../../wp-rbuilt.php');
 /**
  * Noop functions for load-scripts.php and load-styles.php.
  *
