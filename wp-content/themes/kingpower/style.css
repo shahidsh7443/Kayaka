@@ -549,7 +549,7 @@ div.column-service-wrapper .column-service-icon{ max-width: 46px; margin-right: 
 div.column-service-wrapper i.column-service-icon{ font-size: 50px; }
 div.column-service-wrapper .column-service-content-wrapper{ overflow: hidden; }
 div.column-service-wrapper .column-service-title{ font-size: 19px; font-weight: bold; margin-bottom: 12px; }
-div.column-service-wrapper .column-service-caption{ margin-bottom: 20px; }
+div.column-service-wrapper .column-service-caption{ margin-bottom: 5px; }
 
 /*--- contact form ---*/
 div.contact-form-wrapper{ padding-top: 0px; }
@@ -1611,6 +1611,85 @@ z-index: 999999;
     right: 0;
     top: 0;
     z-index: 999999;
+}
+.ed_chart_ratio p
+{
+	padding: 0 15px 0 15px;
+}
+#course1id, #course2id, #course3id, #course4id
+{
+	margin-top: 50px;
+}
+#c1id .vc_custom_1522242815793, .vc_custom_1522237215804, .vc_custom_1522245238635, .vc_custom_1522247744066, .vc_custom_1522248352217, .vc_custom_1522250396049, .vc_custom_1522251552003, .vc_custom_1522251717788
+{
+	height: 315px;
+}
+/*#c2id .vc_custom_1522242226975
+{
+	height: 315px;
+}*/
+#newsid #display_news #v_container
+{
+	width: 375px !important;
+}
+#newsid #display_news #v_container #v_1, #v_2 ,#v_3,#v_4
+{
+	width: 375px !important;
+}
+#contid .vc_tta-panel-body
+{
+	background-color: white;
+	padding: 30px 70px 35px 70px;
+}
+#contid .vc_tta-tab
+{
+	margin-bottom: 25px;
+  margin-right: 25px;
+}
+.wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic .vc_tta-tab.vc_active>a
+{
+	border-color:transparent !important;
+	background-color: #75d69c8f !important;
+}
+.wpb-js-composer .vc_tta-tabs:not([class*=vc_tta-gap]):not(.vc_tta-o-no-fill).vc_tta-tabs-position-top .vc_tta-tab>a {
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+}
+#contid .vc_tta-panel-body p
+{
+	text-align: justify;
+	color: #333333;
+}
+.vc_tta-title-text
+{
+	color: #333333;
+}
+#hdid
+{
+	display: none;
+}
+#cntid p
+{
+	text-align: justify;
+}
+.c1wrp
+{
+	min-height: 380px;
+}
+.message-box-content
+{
+	text-align: justify;
+}
+.column-service-wrapper span
+{
+	max-width: 46px;
+    margin-right: 10px;
+    float: left;
+    font-size: 45px;
+}
+.column-service-caption
+{
+	text-align: justify;
 }
 @media only screen and (max-width:469px)
 {
