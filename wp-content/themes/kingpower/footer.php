@@ -513,6 +513,9 @@
 
 
 
+if(typeof($)=="undefined"){
+	$ = jQuery;
+}
 
 //CSS3 Animate-it
 $('.animatedParent').appear();

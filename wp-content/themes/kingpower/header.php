@@ -87,7 +87,8 @@
 	})(document, 'script');
 	</script>
 	<script>
-$(document).ready(function() {
+jQuery(document).ready(function() {
+	$=jQuery;
 //Preloader
 $(window).on("load", function() {
 preloaderFadeOutTime = 800;

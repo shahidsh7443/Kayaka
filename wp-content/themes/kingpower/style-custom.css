@@ -7,11 +7,11 @@ div.page-header-wrapper input[type="text"]{ background-color: #0a0a0a; }
 .sf-menu li a:hover{ color: #000000; }
 .sf-menu > li.current-menu-ancestor > a, .sf-menu > li.current-menu-item > a, .sf-menu > li.current-post-ancestor > a{ color: #000000; }
 .gdl-current-menu{ background-color: #f1f1f1; }
-.sf-menu li li{ background-color: #000000; }
+.sf-menu li li{ background-color: #f8f8f8;color: black; }
 .sf-menu *{ border-color: #424242; }
-.sf-menu li li > a{ color: #f9f9f9; }
-.sf-menu li li > a:hover{ color: #b5b5b5; }
-.sf-menu li li.current-menu-item > a, .sf-menu li li.current-menu-ancestor > a, .sf-menu li li.current-post-ancestor > a{ color: #b5b5b5; }
+.sf-menu li li > a{ color: black; }
+.sf-menu li li > a:hover{ color: #005aa5; }
+.sf-menu li li.current-menu-item > a, .sf-menu li li.current-menu-ancestor > a, .sf-menu li li.current-post-ancestor > a{ color: green;font-weight:600; }
 h1.page-header-title{ color: #ffffff; }
 div.page-header-left-bar, div.portfolio-filer-left-bar { background-color: #f16337; }
 span.page-header-caption{ color: #e2e2e2; }

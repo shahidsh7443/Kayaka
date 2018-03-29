@@ -78,8 +78,9 @@ jQuery(document).ready(function(){
 	jQuery(".gdl-page-row-wrapper").fitVids();
 });
 
-$=jQuery;
-$(document).ready(function(){
+
+jQuery(document).ready(function(){
+  $=jQuery;
 $('.mb41').addClass('');
 $('.mb42').addClass('');
 $('.about-us-wrapper').addClass('animatedParent');
@@ -100,6 +101,13 @@ $('.kaycls3').addClass('animated fadeInRight');
 $('#rid3').addClass('animatedParent');
 $('.imgcls4').addClass('animated fadeInRight');
 $('.kaycls4').addClass('animated fadeInLeft');
+var tt=$('.content-wrapper').innerWidth();
+$('#galid').width(tt);
+  if($(window).width() <= 1024){
+    var wdth=$(window).width();
+  $('#contid .wpb_wrapper').width(wdth);
+
+  }
 var _counterflag = false;
 _counter();
 $(window).scroll(function(){

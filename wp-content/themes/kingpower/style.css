@@ -1203,11 +1203,11 @@ only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device
 		margin-top: 35px;
     margin-left: 32%;
 }
-#ytube
+#ytube iframe
 {
 	position: absolute;
 	right: 0;
-	z-index: 555;
+	z-index: 10;
 	margin-top: 210px;
 	margin-right: 25px;
 }
@@ -1620,9 +1620,9 @@ z-index: 999999;
 {
 	margin-top: 50px;
 }
-#c1id .vc_custom_1522242815793, .vc_custom_1522237215804, .vc_custom_1522245238635, .vc_custom_1522247744066, .vc_custom_1522248352217, .vc_custom_1522250396049, .vc_custom_1522251552003, .vc_custom_1522251717788
+#c1id .vc_custom_1522242815793, .vc_custom_1522237215804, .vc_custom_1522306230288, .vc_custom_1522308129765, .vc_custom_1522312314551, .vc_custom_1522312920777, .vc_custom_1522322658179, .vc_custom_1522323491848, .vc_custom_1522324693160, .vc_custom_1522325236850, .vc_custom_1522326118004, .vc_custom_1522327387192
 {
-	height: 315px;
+	height: 350px;
 }
 /*#c2id .vc_custom_1522242226975
 {
@@ -1691,8 +1691,168 @@ z-index: 999999;
 {
 	text-align: justify;
 }
+.message-box-wrapper.c2wrp {
+    min-height: 605px;
+}
+.message-box-wrapper.c3wrp {
+    min-height: 328px;
+}
+.message-box-wrapper.c4wrp {
+    min-height: 415px;
+}
+.message-box-wrapper.c5wrp {
+    min-height: 476px;
+}
+.message-box-wrapper.c6wrp {
+    min-height: 694px;
+}
+.message-box-wrapper.c7wrp {
+    min-height: 282px;
+}
+.message-box-wrapper.c8wrp {
+    min-height: 310px;
+}
+.sortLink {
+    padding: 10px 37px !important;
+    background: #236caf !important;
+    border: none !important;
+    color: #FFFFFF !important;
+    font-size: 14px !important;
+}
+#FilerTab {
+    padding: 30px;
+    text-align: center;
+    margin: 0px;
+    text-align: -webkit-center;
+}
+.sortLink.selected {
+    background-color: #5f1a30 !important;
+    /* border: 1px solid #ccc; */
+    box-shadow: none;
+    color: #FFF;
+}
+#galid
+{
+	margin-left: -40px;
+}
+#galid .vc_column-inner
+{
+	margin-left: 30px;
+}
+.ed_blog_info table tr th, .ed_blog_info table tr td {
+    padding: 5px;
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    line-height: 38px;
+		padding-left: 10px;
+    padding-right: 10px;
+}
+.mb51 .gdl-column-item
+{
+    border: none;
+    box-shadow: none;
+    padding: 0px;
+}
+.ed_blog_image img
+{
+	width: 1165px;
+	    margin-top: 50px;
+	    height: 425px;
+}
+.ed_blog_info .blog_meta {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 15px;
+    padding: 0px;
+}
+.ed_blog_info {
+    float: left;
+    width: 100%;
+}
+.ed_blog_info p
+{
+	text-align: justify;
+	line-height: 26px;
+}
+#addressid
+{
+	margin-top: 75px;
+}
+.ed_contact_form {
+    float: left;
+    width: 100%;
+}
+div.wpcf7 {
+    margin: 0;
+    padding: 0;
+}
+#contid
+{
+    width: 1271px;
+    margin-left: -55px;
+}
+#mpid iframe
+{
+	height: 300px;
+}
+#mp2id .vc_custom_1522343915859
+{
+	height: 310px;
+}
+.applybs button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+.applybs button, input[type="button"], input[type="reset"], input[type="submit"] {
+    border: 1px solid;
+    border-color: #ccc #ccc #bbb;
+    border-radius: 3px;
+    color: rgba(0, 0, 0, .8);
+    font-size: 12px;
+    padding: .6em 1em .4em;
+}
+.applybs .ed_orange {
+    background-color: #eb7f1c;
+    color: #fff;
+    border: 1px solid #eb7f1c;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.applybs .ed_btn {
+    border-radius: 0;
+    padding: 0px 20px !important;
+    font-size: 14px !important;
+    text-transform: capitalize;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+    z-index: 1;
+    border: none;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+}
+#ed_submit
+{
+	width: 20%;
+	margin-left: 40%;
+margin-top: 30px;
+}
+.contform
+{
+	padding-bottom: 50px;
+}
+/******************Mobile Responsive***********************/
 @media only screen and (max-width:469px)
 {
+	.sortLink {
+    width: 280px;
+}
 	.top-navigation-container
 	{
 		display: none;
