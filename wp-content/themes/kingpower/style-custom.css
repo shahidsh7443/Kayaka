@@ -154,10 +154,11 @@ h3{ font-size: 20px; }
 h4{ font-size: 18px; }
 h5{ font-size: 16px; }
 h6{ font-size: 15px; }
-body{ font-family: "Open Sans"; }
-h1, h2, h3, h4, h5, h6{ font-family: "Open Sans"; }
-.gdl-slider-title{ font-family: "Open Sans"; }
+body{ font-family: "Montaga"; }
+h1, h2, h3, h4, h5, h6{ font-family: "Averia Libre"; }
+.gdl-slider-title{ font-family: "Original Surfer"; }
 h1.stunning-text-title{ font-family: "Open Sans"; }
+div.navigation-wrapper{ font-family: "ABeeZee"; }
 .blog-info-wrapper i, .gdl-blog-medium .blog-tag i{ color: #333333; }
 li.active span.accordion-icon, li.active span.toggle-box-icon{ background-image: url(images/icon/dark/accordion-title-active.png); }
 span.accordion-icon, span.toggle-box-icon{ background-image: url(images/icon/dark/accordion-title.png); }

@@ -1758,6 +1758,8 @@ $(document.body).on('appear', '.animatedParent', function(e, $affected){
 }
 .applybs p {
   margin: 0 0 10px;
+	color:#333333;
+	font-size: 16px;
 }
 .applybs .lead {
   margin-bottom: 20px;
