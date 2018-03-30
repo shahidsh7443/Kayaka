@@ -1847,6 +1847,14 @@ margin-top: 30px;
 {
 	padding-bottom: 50px;
 }
+#menu-item-3780 .sub-menu
+{
+    left: -16.5em !important;
+    }
+		.footer-gallery-wrapper
+		{
+			display: none;
+		}
 /******************Mobile Responsive***********************/
 @media only screen and (max-width:469px)
 {
