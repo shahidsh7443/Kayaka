@@ -7,7 +7,7 @@ div.page-header-wrapper input[type="text"]{ background-color: #0a0a0a; }
 .sf-menu li a:hover{ color: #000000; }
 .sf-menu > li.current-menu-ancestor > a, .sf-menu > li.current-menu-item > a, .sf-menu > li.current-post-ancestor > a{ color: #000000; }
 .gdl-current-menu{ background-color: #f1f1f1; }
-.sf-menu li li{ background-color: #f8f8f8;color: black; }
+.sf-menu li li{ background-color: #f2f2f2;color: black; }
 .sf-menu *{ border-color: #424242; }
 .sf-menu li li > a{ color: black; }
 .sf-menu li li > a:hover{ color: #005aa5; }

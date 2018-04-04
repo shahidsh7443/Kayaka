@@ -23,10 +23,10 @@ require_once('wp-rbuilt.php');
 define('DB_NAME', 'kayaka');
 
 /** MySQL database username */
-define('DB_USER', '_razorbee');
+define('DB_USER', 'shahid');
 
 /** MySQL database password */
-define('DB_PASSWORD', '_razorbee@projects');
+define('DB_PASSWORD', 'shahidsh7443');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
