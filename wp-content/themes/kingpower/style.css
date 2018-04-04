@@ -1229,7 +1229,7 @@ only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device
 #countid
 {
  padding: 25px;
-	 background-image: linear-gradient(to right, #f4524d 0%, #f4524d66 50%,#f4524d 100%);
+	 background: linear-gradient(to right, #f4524d 0%, #f4524d66 50%,#f4524d 100%);
 	 margin-left: -40px;
 	 margin-right: -40px;
 	 padding-top: 75px;
@@ -1966,6 +1966,7 @@ ul.sub-menu li:hover
 /******************Mobile Responsive***********************/
 @media only screen and (max-width:469px)
 {
+
   .vc_custom_1522842414274
   {
   background-position: 5% !important;
@@ -2034,7 +2035,7 @@ height: 500px;
  #v_container
  {
 	 margin-left: -15px;
-	 width: 250px !important;
+	 width:265px !important;
  }
  div.header-wrapper .logo-wrapper
  {
@@ -2072,5 +2073,9 @@ div.header-wrapper .gdl-navigation-wrapper {
 }
 .applybs .msgxc2 img {
 	 width:auto;
+}
+.overlaycourse {
+    top: 25px;
+    height: 90%;
 }
 }

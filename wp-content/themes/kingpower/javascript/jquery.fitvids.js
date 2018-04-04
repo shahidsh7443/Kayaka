@@ -113,6 +113,8 @@ $('#galid').width(tt);
   $('.about-us-wrapper').width(wdth-70);
   $('.vc_custom_1522842414274').attr('style','background-position:5% !important');
   $('.vc_custom_1522843801544').attr('style','background-position:15% !important');
+
+  $('#v_1,#v_2,#v_3,#v_4').attr('style','padding-right:0px !important');
   }
 var _counterflag = false;
 _counter();
